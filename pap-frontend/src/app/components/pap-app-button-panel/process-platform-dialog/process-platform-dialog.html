@@ -1,1 +1,41 @@
-<p>process-platform-dialog works!</p>
+<div class="process-platform">
+    <h2>Process Platform</h2>
+    <p class="description">
+        Ensures precision, real-time adaptation, and efficiency by synchronizing robotic movements, 
+        sensors, and welding parameters. This foundation enhances productivity and delivers consistent, 
+        high-quality welds.
+    </p>
+
+    <div class="daemon-checkbox">
+        <ur-checkbox 
+            [checked]="useDaemonForWeave"
+            (checkedChange)="onUseDaemonChange($event)">
+            Use Daemon for Weave
+        </ur-checkbox>
+    </div>
+
+    <div class="daemon-status-card">
+        <div class="status-header">
+            <span class="status-label">Weld Daemon Status</span>
+            <div class="status-indicator">
+                <span class="status-text">{{ daemonStatus }}</span>
+                <span class="status-dot" [class.running]="isDaemonRunning"></span>
+            </div>
+            <ur-button 
+                (clicked)="stopDaemon()"
+                type="filled"
+                [disabled]="false"
+                [active]="false"
+            >
+                Stop Daemon
+            </ur-button>
+        </div>
+    </div>
+
+    <div class="daemon-log">
+        <h3>Daemon Log</h3>
+        <div class="log-content">
+            <pre>{{ daemonLog }}</pre>
+        </div>
+    </div>
+</div>
