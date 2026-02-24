@@ -9,16 +9,33 @@ The URCap is built via SDK v0.20.19 and is tested on URSim v10.13
 - **Weld Parameters**: Configure welding process parameters
 - **Process Platform**: Manage welding processes
 - **Equipment Configuration**: Button mapping, torch type, and orientation
+
+  ![Equipment Configuration](read_me_img/equip-config.png)
+
 - **Weld Setup**: Task configuration and management
 
 ## Project Structure
 
 ```
 pap/
-├── pap-frontend/          # Angular frontend
-├── pap-backend/           # Docker backend
-├── manifest.yaml          # URCap manifest
-└── package.json           # Project configuration
+├── pap-frontend/              # Angular frontend
+│   ├── src/
+│   │   ├── app/              # Application source code
+│   │   ├── assets/           # Static resources (icons, images)
+│   │   ├── generated/        # Auto-generated constants
+│   │   └── styles.scss       # Global styles
+│   ├── package.json          # Frontend dependencies
+│   └── angular.json          # Angular configuration
+│
+├── pap-backend/              # Docker backend
+│   ├── src/                  # Backend source code
+│   └── Dockerfile            # Docker configuration
+│
+├── manifest.yaml             # URCap manifest
+├── package.json              # Root project configuration
+├── README.md                 # Project documentation
+├── LICENSE                   # License file
+└── .gitignore                # Git ignore rules
 ```
 
 ## Tech Stack
@@ -58,9 +75,6 @@ npm run install-urcap -- --port <your_ursim_port>
 
 With custom port:
 
-```bash
-npm run install-urcap -- --port <port_number>
-```
 
 ### Deploy to Robot
 
