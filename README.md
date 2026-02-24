@@ -1,7 +1,7 @@
 # Process Application Platform (PAP)
 
 A welding solution URCap for Universal Robots with Angular frontend and Docker backend.
-The URCap is built via SDK v0.20.19 and is tested on URSIM v10.13
+The URCap is built via SDK v0.20.19 and is tested on URSim v10.13
 
 ## Features
 
@@ -28,10 +28,11 @@ pap/
 
 ## Prerequisites
 
-- Node.js v16+
+- Node.js v24+
 - npm or yarn
 - Docker
 - URSim or UR robot
+- Angular/cli v21.0.5
 
 ## Installation
 
@@ -49,8 +50,10 @@ npm run build
 
 ### Deploy to URSim
 
+**Important**: Ensure your URSim is started with the `--dev` option.
+
 ```bash
-npm run install-urcap
+npm run install-urcap -- --port <your_ursim_port>
 ```
 
 With custom port:
@@ -82,7 +85,7 @@ npm run install-urcap -- --host 192.168.1.100
 
 Uses Universal Robots UI component library:
 
-- `ur-tabs`, `ur-dropdown`, `ur-radio-group`, `ur-card`, `ur-icon-button`
+- `ur-tabs`, `ur-dropdown`, `ur-radio-group`, `ur-icon-button`
 
 Documentation: https://ui.universal-robots.com/
 
