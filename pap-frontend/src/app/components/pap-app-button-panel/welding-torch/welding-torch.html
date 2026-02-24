@@ -1,0 +1,24 @@
+<div class="welding-torch">
+    <div class="torch-header">
+        <h3>Welding Torch</h3>
+        <div class="dropdown-field">
+            <ur-dropdown
+                [label]="'Type'"
+                [labelOutside]="false"
+                [options]="torchTypeOptions"
+                [selectedOption]="weldingTorch.type"
+                [numberOfOptionsVisible]="5"
+                [clearable]="false"
+                [placeholder]="'- Select -'"
+                (selectionChange)="onTorchTypeChange($event)"
+            ></ur-dropdown>
+        </div>
+    </div>
+    
+    <div class="torch-illustration">
+        <p class="torch-description">
+            The lorem ipsum welding torch is a dolores etcetera nimis welding torch used for dolor.
+        </p>
+        <img [src]="torchImagePath" alt="Welding Torch Diagram" />
+    </div>
+</div>

@@ -1,0 +1,76 @@
+{
+  "applicationNodes": [ 
+    {
+      "translationPath": "assets/i18n/",
+      "behaviorURI": "pap-app-button-panel.worker.js",
+      "presenterURI": "main.js",
+      "componentTagName": "pc-gae-pap-pap-app-button-panel"
+    }
+    ],
+  "programNodes": [ 
+    {
+      "excludeFromToolbox": false,
+      "translationPath": "assets/i18n/",
+      "iconURI": "assets/icons/pap.svg",
+      "behaviorURI": "pap-pg-weld-path.worker.js",
+      "presenterURI": "main.js",
+      "componentTagName": "pc-gae-pap-pap-pg-weld-path"
+    },
+    {
+      "excludeFromToolbox": false,
+      "translationPath": "assets/i18n/",
+      "iconURI": "assets/icons/pap.svg",
+      "behaviorURI": "pap-pg-weld-replay.worker.js",
+      "presenterURI": "main.js",
+      "componentTagName": "pc-gae-pap-pap-pg-weld-replay"
+    }],
+  "smartSkills": [ 
+    {
+      "name": "pc-gae-pap-pap-sk1",
+      "iconURI": "assets/icons/pap.svg",
+      "presenterURI": "main.js",
+      "componentTagName": "pc-gae-pap-pap-sk1",
+      "behaviorURI": "pap-sk1.worker.js",
+      "translationPath": "assets/i18n/"
+    },
+    {
+      "name": "pc-gae-pap-pap-sk2",
+      "iconURI": "assets/icons/pap.svg",
+      "presenterURI": "main.js",
+      "componentTagName": "pc-gae-pap-pap-sk2",
+      "behaviorURI": "pap-sk2.worker.js",
+      "translationPath": "assets/i18n/"
+    },
+    {
+      "name": "pc-gae-pap-pap-sk3",
+      "iconURI": "assets/icons/pap.svg",
+      "presenterURI": "main.js",
+      "componentTagName": "pc-gae-pap-pap-sk3",
+      "behaviorURI": "pap-sk3.worker.js",
+      "translationPath": "assets/i18n/"
+    }],
+  "sidebarItems": [ 
+    {
+      "name": "pc-gae-pap-pap-bar1",
+      "iconURI": "assets/icons/pap.svg",
+      "presenterURI": "main.js",
+      "componentTagName": "pc-gae-pap-pap-bar1",
+      "behaviorURI": "pap-bar1.worker.js",
+      "translationPath": "assets/i18n/"
+    },
+    {
+      "name": "pc-gae-pap-pap-bar2",
+      "iconURI": "assets/icons/pap.svg",
+      "presenterURI": "main.js",
+      "componentTagName": "pc-gae-pap-pap-bar2",
+      "behaviorURI": "pap-bar2.worker.js",
+      "translationPath": "assets/i18n/"
+    }],
+  "operatorScreens": [ 
+    {
+      "translationPath": "assets/i18n/",
+      "behaviorURI": "pap-os1.worker.js",
+      "presenterURI": "main.js",
+      "componentTagName": "pc-gae-pap-pap-os1"
+    }]
+}

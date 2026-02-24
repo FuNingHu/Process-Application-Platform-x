@@ -1,0 +1,15 @@
+metadata:
+  vendorID: "pc-gae"
+  urcapID: "pap"
+  vendorName: "Product Creation - GAE"
+  urcapName: "Process Application Platform"
+  version: 1.0.1
+artifacts:
+  webArchives:
+  - id: "pap-frontend"
+    folder: "pap-frontend"
+  
+  containers:
+  - id: "pap-backend"
+    image: "pap-backend:latest"
+  

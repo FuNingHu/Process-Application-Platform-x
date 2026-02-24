@@ -1,0 +1,134 @@
+<div class="button-mapping">
+    <h3>Button Mapping</h3>
+    <div class="button-mapping-grid">
+        <div class="dropdown-field">
+            <ur-dropdown
+                [label]="'Up'"
+                [labelOutside]="false"
+                [options]="buttonOptions"
+                [selectedOption]="buttonMapping.up"
+                [numberOfOptionsVisible]="5"
+                [clearable]="false"
+                [placeholder]="'- Select -'"
+                (selectionChange)="onButtonMappingChange('up', $event)"
+            ></ur-dropdown>
+        </div>
+
+        <div class="dropdown-field">
+            <ur-dropdown
+                [label]="'Down'"
+                [labelOutside]="false"
+                [options]="buttonOptions"
+                [selectedOption]="buttonMapping.down"
+                [numberOfOptionsVisible]="5"
+                [clearable]="false"
+                [placeholder]="'- Select -'"
+                (selectionChange)="onButtonMappingChange('down', $event)"
+            ></ur-dropdown>
+        </div>
+
+        <div class="dropdown-field">
+            <ur-dropdown
+                [label]="'MoveJ'"
+                [labelOutside]="false"
+                [options]="buttonOptions"
+                [selectedOption]="buttonMapping.moveJ"
+                [numberOfOptionsVisible]="5"
+                [clearable]="false"
+                [placeholder]="'- Select -'"
+                (selectionChange)="onButtonMappingChange('moveJ', $event)"
+            ></ur-dropdown>
+        </div>
+
+        <div class="dropdown-field">
+            <ur-dropdown
+                [label]="'MoveL'"
+                [labelOutside]="false"
+                [options]="buttonOptions"
+                [selectedOption]="buttonMapping.moveL"
+                [numberOfOptionsVisible]="5"
+                [clearable]="false"
+                [placeholder]="'- Select -'"
+                (selectionChange)="onButtonMappingChange('moveL', $event)"
+            ></ur-dropdown>
+        </div>
+
+        <div class="dropdown-field">
+            <ur-dropdown
+                [label]="'Weld_L'"
+                [labelOutside]="false"
+                [options]="buttonOptions"
+                [selectedOption]="buttonMapping.weldL"
+                [numberOfOptionsVisible]="5"
+                [clearable]="false"
+                [placeholder]="'- Select -'"
+                (selectionChange)="onButtonMappingChange('weldL', $event)"
+            ></ur-dropdown>
+        </div>
+
+        <div class="dropdown-field">
+            <ur-dropdown
+                [label]="'Weld_C'"
+                [labelOutside]="false"
+                [options]="buttonOptions"
+                [selectedOption]="buttonMapping.weldC"
+                [numberOfOptionsVisible]="5"
+                [clearable]="false"
+                [placeholder]="'- Select -'"
+                (selectionChange)="onButtonMappingChange('weldC', $event)"
+            ></ur-dropdown>
+        </div>
+
+        <div class="dropdown-field">
+            <ur-dropdown
+                [label]="'Touch Sense'"
+                [labelOutside]="false"
+                [options]="buttonOptions"
+                [selectedOption]="buttonMapping.touchSense"
+                [numberOfOptionsVisible]="5"
+                [clearable]="false"
+                [placeholder]="'- Select -'"
+                (selectionChange)="onButtonMappingChange('touchSense', $event)"
+            ></ur-dropdown>
+        </div>
+
+        <div class="dropdown-field">
+            <ur-dropdown
+                [label]="'SearchL'"
+                [labelOutside]="false"
+                [options]="buttonOptions"
+                [selectedOption]="buttonMapping.searchL"
+                [numberOfOptionsVisible]="5"
+                [clearable]="false"
+                [placeholder]="'- Select -'"
+                (selectionChange)="onButtonMappingChange('searchL', $event)"
+            ></ur-dropdown>
+        </div>
+
+        <div class="dropdown-field">
+            <ur-dropdown
+                [label]="'Torch Waypoint'"
+                [labelOutside]="false"
+                [options]="buttonOptions"
+                [selectedOption]="buttonMapping.torchWaypoint"
+                [numberOfOptionsVisible]="5"
+                [clearable]="false"
+                [placeholder]="'- Select -'"
+                (selectionChange)="onButtonMappingChange('torchWaypoint', $event)"
+            ></ur-dropdown>
+        </div>
+
+        <div class="dropdown-field">
+            <ur-dropdown
+                [label]="'Delete'"
+                [labelOutside]="false"
+                [options]="buttonOptions"
+                [selectedOption]="buttonMapping.delete"
+                [numberOfOptionsVisible]="5"
+                [clearable]="false"
+                [placeholder]="'- Select -'"
+                (selectionChange)="onButtonMappingChange('delete', $event)"
+            ></ur-dropdown>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="equipment-configuration">
+    <!-- Torch Orientation Section - 普通组件 -->
+    <div class="torch-orientation">
+        <h3>Torch Orientation</h3>
+        <p class="description">Used while teaching TCP orientation</p>
+        <ur-radio-group 
+            [value]="torchOrientation"
+            (radioChange)="onTorchOrientationChange($event.value)">
+            <ur-radio-button 
+                value="z-downward"
+                [checked]="torchOrientation === 'z-downward'">
+                Z Downward
+            </ur-radio-button>
+            <ur-radio-button 
+                value="z-upward"
+                [checked]="torchOrientation === 'z-upward'">
+                Z Upward
+            </ur-radio-button>
+        </ur-radio-group>
+    </div>
+
+    <!-- 两列布局：Button Mapping 和 Welding Torch -->
+    <div class="two-column-layout">
+        <app-button-mapping
+            [applicationAPI]="applicationAPI"
+            [robotSettings]="robotSettings"
+            [applicationNode]="applicationNode">
+        </app-button-mapping>
+
+        <app-welding-torch
+            [applicationAPI]="applicationAPI"
+            [robotSettings]="robotSettings"
+            [applicationNode]="applicationNode">
+        </app-welding-torch>
+    </div>
+</div>

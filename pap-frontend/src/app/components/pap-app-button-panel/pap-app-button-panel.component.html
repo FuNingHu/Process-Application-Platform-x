@@ -1,0 +1,77 @@
+@if (applicationNode) {
+    <div class="welding-solution-container">
+        <div class="content-layout">
+            <!-- Left Navigation Panel -->
+            <div class="nav-panel">
+                <ur-tabs (linkChanged)="onTabChanged($event)" [isVertical]="true">
+                    <ur-tab 
+                        title="Weld Path" 
+                        link="weld-path">
+                    </ur-tab>
+                    <ur-tab 
+                        title="Weld Parameters" 
+                        link="weld-parameters">
+                    </ur-tab>
+                    <ur-tab 
+                        title="Process Platform" 
+                        link="process-platform">
+                    </ur-tab>
+                    <ur-tab 
+                        title="Equipment Configuration" 
+                        link="equipment-config">
+                    </ur-tab>
+                    <ur-tab 
+                        title="Weld Setup" 
+                        link="weld-setup">
+                    </ur-tab>
+                </ur-tabs>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="main-content">
+                @switch (activeTab) {
+                    @case ('weld-path') {
+                        <app-weld-path-dialog
+                            [applicationAPI]="applicationAPI"
+                            [robotSettings]="robotSettings"
+                            [applicationNode]="applicationNode">
+                        </app-weld-path-dialog>
+                    }
+                    @case ('weld-parameters') {
+                        <app-weld-parameters-dialog
+                            [applicationAPI]="applicationAPI"
+                            [robotSettings]="robotSettings"
+                            [applicationNode]="applicationNode">
+                        </app-weld-parameters-dialog>
+                    }
+                    @case ('process-platform') {
+                        <app-process-platform-dialog
+                            [applicationAPI]="applicationAPI"
+                            [robotSettings]="robotSettings"
+                            [applicationNode]="applicationNode">
+                        </app-process-platform-dialog>
+                    }
+                    @case ('equipment-config') {
+                        <app-equipment-configuration-dialog
+                            [applicationAPI]="applicationAPI"
+                            [robotSettings]="robotSettings"
+                            [applicationNode]="applicationNode">
+                        </app-equipment-configuration-dialog>
+                    }
+                    @case ('weld-setup') {
+                        <app-weld-setup-dialog
+                            [applicationAPI]="applicationAPI"
+                            [robotSettings]="robotSettings"
+                            [applicationNode]="applicationNode">
+                        </app-weld-setup-dialog>
+                    }
+                    @default {
+                        <div class="placeholder-content">
+                            <p>Select a configuration option from the left panel</p>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+}

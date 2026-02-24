@@ -1,0 +1,53 @@
+{
+        "application": {
+          "nodes": {
+            "pc-gae-pap-pap-app-button-panel": {
+              "title": "Welding Solution",
+              "supportiveText": "- Supportive Text"
+              }
+        }
+    },
+        "program": {
+          "tree": {
+            "nodes": {
+              "pc-gae-pap-pap-pg-weld-path": "Pap Pg Weld Path",
+              "pc-gae-pap-pap-pg-weld-replay": "Pap Pg Weld Replay"
+          }
+        }
+      },
+        "program-node-labels": {
+            "pap-pg-weld-path": {
+                "nodeTitle": "Node Title",
+                "subTitle": "Sub Title - {{ dynamicValue }}"
+            },
+            "pap-pg-weld-replay": {
+                "nodeTitle": "Node Title",
+                "subTitle": "Sub Title - {{ dynamicValue }}"
+            }
+        },
+        "smart-skills": {
+          "pc-gae-pap-pap-sk1": {
+            "title": "Pap Sk1"
+            },
+          "pc-gae-pap-pap-sk2": {
+            "title": "Pap Sk2"
+            },
+          "pc-gae-pap-pap-sk3": {
+            "title": "Pap Sk3"
+            }
+    },
+        "sidebar-items": {
+          "pc-gae-pap-pap-bar1": {
+            "title": "Pap Bar1"
+            },
+          "pc-gae-pap-pap-bar2": {
+            "title": "Pap Bar2"
+            }
+    },
+        "operator-screen": {
+          "pc-gae-pap-pap-os1": {
+            "title": "Pap Os1"
+            }
+        
+    }
+}
