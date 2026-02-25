@@ -3,19 +3,22 @@
 .welding-solution-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
+  max-height: 100%;
   background-color: var(--ur-color-background-primary, #f5f5f5);
+  overflow: hidden;
 
   .content-layout {
     display: flex;
     flex: 1;
     overflow: hidden;
     gap: 16px;
-    align-items: flex-start;
+    align-items: stretch;
+    padding: 16px;
 
     .nav-panel {
       width: 285px;
-      height: 631px;
+      height: 100%;
       background-color: var(--ur-color-background-secondary, #ffffff);
       border-right: 1px solid var(--ur-color-border, #e0e0e0);
       border-radius: 8px;
@@ -23,6 +26,7 @@
       overflow-y: auto;
       box-shadow: 0px 1px 0px 0px rgba(0, 24, 32, 0.16);
       flex-shrink: 0;
+      box-sizing: border-box;
     }
 
     .main-content {
@@ -30,8 +34,9 @@
       padding: 0;
       overflow: visible;
       display: flex;
-      align-items: flex-start;
+      align-items: stretch;
       justify-content: flex-start;
+      height: 100%;
 
       .placeholder-content {
         display: flex;

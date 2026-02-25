@@ -5,23 +5,23 @@
             <div class="nav-panel">
                 <ur-tabs (linkChanged)="onTabChanged($event)" [isVertical]="true">
                     <ur-tab 
-                        title="Weld Path" 
+                        [title]="'Weld Path'" 
                         link="weld-path">
                     </ur-tab>
                     <ur-tab 
-                        title="Weld Parameters" 
+                        [title]="'Weld Parameters'" 
                         link="weld-parameters">
                     </ur-tab>
                     <ur-tab 
-                        title="Process Platform" 
+                        [title]="'Process Platform'" 
                         link="process-platform">
                     </ur-tab>
                     <ur-tab 
-                        title="Equipment Configuration" 
+                        [title]="'Equipment Configuration'" 
                         link="equipment-config">
                     </ur-tab>
                     <ur-tab 
-                        title="Weld Setup" 
+                        [title]="'Weld Setup'" 
                         link="weld-setup">
                     </ur-tab>
                 </ur-tabs>
