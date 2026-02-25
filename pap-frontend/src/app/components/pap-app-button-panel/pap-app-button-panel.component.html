@@ -3,7 +3,9 @@
         <div class="content-layout">
             <!-- Left Navigation Panel -->
             <div class="nav-panel">
-                <ur-tabs (linkChanged)="onTabChanged($event)" [isVertical]="true">
+                <ur-tabs (linkChanged)="onTabChanged($event)" 
+                    [isVertical]="true"
+                    [hasBackground]="false">
                     <ur-tab 
                         [title]="'Weld Path'" 
                         link="weld-path">
