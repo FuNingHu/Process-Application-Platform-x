@@ -1,0 +1,12 @@
+.weld-parameters-text {
+  // Light theme (default) - red
+  color: var(--color-red-200);
+}
+
+// Dark theme - yellow (detects system theme preference)
+@media (color-scheme: light) {
+  .weld-parameters-text {
+    color: var(--color-yellow-600);
+  }
+}
+

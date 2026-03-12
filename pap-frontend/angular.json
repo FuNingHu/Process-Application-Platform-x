@@ -37,6 +37,7 @@
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
+                "libs/designtokens/src",
                 "node_modules/@universal-robots",
                 "node_modules/@universal-robots/designtokens/src"
               ]

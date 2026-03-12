@@ -27,9 +27,11 @@ export class PapAppButtonPanelComponent implements ApplicationPresenter, OnChang
     ) {
     }
 
-    onTabChanged(tabLink: string) {
-        this.activeTab = tabLink;
-        this.cd.detectChanges();
+    onTabChanged(tabLink: string | undefined) {
+        if (tabLink) {
+            this.activeTab = tabLink;
+            this.cd.detectChanges();
+        }
     }
 
     ngOnChanges(changes: SimpleChanges): void {
